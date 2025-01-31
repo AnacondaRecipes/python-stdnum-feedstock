@@ -23,45 +23,14 @@ requirements:
     - python
 
 # All tests have been skipped by the python-stdnum developers.
-  # py39 run-test-pre: PYTHONHASHSEED='1943532569'
-  # py39 run-test: commands[0] | pytest
-  # ============================= test session starts ==============================
-  # platform darwin -- Python 3.9.21, pytest-8.3.4, pluggy-1.5.0
-  # cachedir: .tox/py39/.pytest_cache
-  # rootdir: $SRC_DIR
-  # plugins: cov-6.0.0
-  # collected 9 items
-  # 
-  # tests/test_by_unp.py s                                                   [ 11%]
-  # tests/test_ch_uid.py s                                                   [ 22%]
-  # tests/test_de_handelsregisternummer.py s                                 [ 33%]
-  # tests/test_do_cedula.py s                                                [ 44%]
-  # tests/test_do_ncf.py s                                                   [ 55%]
-  # tests/test_do_rnc.py ss                                                  [ 77%]
-  # tests/test_eu_vat.py ss                                                  [100%]
-  # 
-  # ============================== 9 skipped in 0.06s ==============================
-  # ___________________________________ summary ____________________________________
-  #   py39: commands succeeded
-  #   congratulations :)
 
-# Keeping the tests commented out until the next release—there's a chance they might be re-enabled.
 test:
-  #source_files:
-    #- stdnum
-    #- tests
-    #- tox.ini
-    #- setup.py
-    #- README.md
   imports:
     - stdnum
   commands:
     - pip check
-    #- tox -e "$(echo "py{{ PY_VER }}" | sed 's/\.//g')" --skip-missing-interpreters false
   requires:
     - pip
-    #- pytest
-    #- tox
 
 about:
   home: https://pypi.org/project/python-stdnum/
