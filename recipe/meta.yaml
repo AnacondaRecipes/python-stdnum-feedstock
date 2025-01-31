@@ -44,11 +44,12 @@ requirements:
   # ___________________________________ summary ____________________________________
   #   py39: commands succeeded
   #   congratulations :)
+
 # Keeping the tests commented out until the next release—there's a chance they might be re-enabled.
 test:
-  source_files:
-    - stdnum
-    - tests
+  #source_files:
+    #- stdnum
+    #- tests
     #- tox.ini
     #- setup.py
     #- README.md
@@ -59,7 +60,7 @@ test:
     #- tox -e "$(echo "py{{ PY_VER }}" | sed 's/\.//g')" --skip-missing-interpreters false
   requires:
     - pip
-    - pytest
+    #- pytest
     #- tox
 
 about:
